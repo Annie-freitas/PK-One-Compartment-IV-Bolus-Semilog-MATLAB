@@ -1,4 +1,4 @@
-# One‑Compartment IV Bolus Model – MATLAB
+# One‑Compartment IV Bolus Model(First Order Elimination) – MATLAB
 
 A MATLAB simulation of drug concentration following an intravenous (IV) bolus dose, using a one‑compartment pharmacokinetic model. 
 The script solves the ordinary differential equation and generates both linear and semilog concentration‑time plots.
