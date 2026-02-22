@@ -1,6 +1,7 @@
 # One‑Compartment IV Bolus Model – MATLAB
 
-A concise MATLAB simulation of drug concentration following an intravenous (IV) bolus dose, using a one‑compartment pharmacokinetic model. The script solves the ordinary differential equation and generates both linear and semilog concentration‑time plots.
+A MATLAB simulation of drug concentration following an intravenous (IV) bolus dose, using a one‑compartment pharmacokinetic model. 
+The script solves the ordinary differential equation and generates both linear and semilog concentration‑time plots.
 
 ## What I Built
 
@@ -33,11 +34,4 @@ A concise MATLAB simulation of drug concentration following an intravenous (IV) 
 3. Click **Run** or type the filename in the Command Window.
 4. Modify parameters (`D`, `CL`, `V`) at the top to explore different scenarios.
 
-### Self‑contained version (local function)
-Replace the `ode23` call with:
-```matlab
-[t, C] = ode23(@(t, C) deriv(t, C, CL, V), [0 10], D/V);
 
-function dCdt = deriv(~, C, CL, V)
-    dCdt = -(CL/V) * C;
-end
